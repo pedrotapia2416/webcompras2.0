@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es" class="wide wow-animation">
+<head>
+<title>ComprasPúblicas</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<!-- CSS -->
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+
+<link rel="icon" href="images/favicon-2.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/css.css?family=Roboto:100,300,400,500,700%7CPlayfair+Display:400,700,700i,900,900i">
+<link rel="stylesheet" href="css/style.css">
+
+
+<script type="text/javascript">
+$(function(){
+var $tabla = $('#tabla');
+
+$('#selectCategory').change(function(){
+  var value = $(this).val();
+  if (value){
+    $('tbody tr.' + value, $tabla).show();
+    $('tbody tr:not(.' + value + ')', $tabla).hide();
+  }
+  else{
+    // Se ha seleccionado All
+    $('tbody tr', $tabla).show();
+  }
+});
+});
+</script>
+
+
+
+</head>
+<body style="">
+<div class="page">
+  <header class="page-head ">
+    <div class="rd-navbar-wrap ">
+      <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="53px" data-lg-stick-up-offset="53px" data-md-stick-up="true" data-lg-stick-up="true" class="rd-navbar rd-navbar-corporate-dark">
+        <div class="rd-navbar-inner ">
+          <div class="rd-navbar-aside ">
+            <div data-custom-toggle=".rd-navbar-aside" data-custom-toggle-disable-on-blur="true" class="rd-navbar-aside-toggle"><span></span></div>
+            <div class="rd-navbar-aside-content context-dark ">
+              <ul class="rd-navbar-aside-group list-units">
+                <li>
+                  <div class="unit unit-horizontal unit-spacing-xs">
+                    <div class="unit-left"><span class="icon icon-xxs-small icon-primary material-icons-place icon-shift-1 offset-top-2"></span></div>
+                    <div class="unit-body"><a href="#" class="link-white-v2 reveal-inline">Concepción Arenal 54, Córdoba</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="unit unit-horizontal unit-spacing-xs">
+                    <div class="unit-left"><span class="icon icon-xxs icon-primary fa-clock-o offset-top-2"></span></div>
+                    <div class="unit-body">
+                      <p class="text-white">Lunes – Viernes: 8:00am–20:00pm</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="unit unit-horizontal unit-spacing-xs">
+                    <div class="unit-left"><span class="icon icon-xs icon-primary thin-icon-support "></span></div>
+                    <div class="unit-body"><a href="callto:#" class="link-white-v2">Atención Online</a></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="rd-navbar-aside-group">
+                <ul class="list-inline list-inline-reset">
+                  <li><a href="https://www.facebook.com/ropycecba" target="_blank" class="icon icon-round icon-abbey-filled icon-xxs-smallest fa fa-facebook"></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCiPAxG4_18oZzeJRPIOQkIg" target="_blank" class="icon icon-round icon-abbey-filled icon-xxs-smallest fa fa-youtube"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="rd-navbar-group rd-navbar-search-wrap">
+            <div class="rd-navbar-panel">
+              <button data-custom-toggle=".rd-navbar-nav-wrap" data-custom-toggle-disable-on-blur="true" class="rd-navbar-toggle"><span></span></button>
+              <a href="index.html" class="rd-navbar-brand brand"><img src="images/compras.png" alt="logo" width="200" height="34"/></a> </div>
+            <div class="rd-navbar-nav-wrap">
+              <div class="rd-navbar-nav-inner">
+                <div class="rd-navbar-search">
+                  <form action="search-results.html" method="GET" data-search-live="rd-search-results-live" class="rd-search">
+                    <div class="form-group">
+                      <label for="rd-search-form-input" class="form-label">Buscar...</label>
+                      <input id="rd-search-form-input" type="text" name="s" autocomplete="off" class="form-control">
+                      <div id="rd-search-results-live" class="rd-search-results-live"></div>
+                    </div>
+                    <button type="submit" class="rd-search-submit"></button>
+                  </form>
+                  <button data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-search-wrap" class="rd-navbar-search-toggle"></button>
+                </div>
+                <ul class="rd-navbar-nav">
+                  <li class="active"><a href="index.html"><i class="fa fa-home"></i> </a> </li>
+                  <li><a href="institucional.html">Institucional</a> </li>
+                  <li><a href="normativa.html"> <i class="fa fa-book"></i> Normativa</a>
+                    <ul class="rd-navbar-dropdown">
+                      <li><a href="normativa.html">Bienes y Servicios</a> </li>
+                      <li><a href="normativa.html">Obra Pública</a> </li>
+                      <li><a href="normativa.html">Resoluciones de la DGCyC</a> </li>
+                      <li><a href="normativa.html">Otras normas de referencia</a> </li>
+                    </ul>
+                  </li>
+                  <li><a href="#"><i class="fa fa-question-circle"></i> Ayuda</a>
+                    <ul class="rd-navbar-dropdown">
+                      <li><a href="ayuda.html">Preguntas Frecuentes</a> </li>
+                      <li><a href="instructivos.html">Instructivos</a> </li>
+
+                    </ul>
+                  </li>
+                  <li><a href="novedades.html">Novedades</a> </li>
+
+                  <li><a href="contacto.html">contacto</a> </li>
+                  <li style="cursor:pointer;"> <a class="" type="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> <img src="images/cidi.png" alt="" width="50px"> Ingresá a la plataforma</a> </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="collapse" id="collapseExample">
+        <div class="card card-body bg-primary"  >
+        <div class="row text-white text-center" style="vertical-align:middle">
+          <div class="col-lg-4 cidicard">
+            <h3>¿QUÉ ES CIUDADANO DIGITAL?:</h3>
+            <p>Es una plataforma tecnológica que te permite acceder de forma simple a todos los trámites y servicios digitales del Gobierno de la Provincia de Córdoba.</p>
+          </div>
+          <div class="col-lg-4 cidicard">
+            <h3>NIVEL DE ACCESO 2:</h3>
+
+            <p>Es necesario para realizar las gestiones en ComprasPúblicas. Te permitirá acceder a una mayor cantidad de servicios web, digitalizar documentación y otros. <br>
+           </p>	<div type="button" class="btn btn-warning" name="button"><a href="https://cidi.cba.gov.ar/portal-publico/acceso#nivel2" target="_blank">Más Información</a></div>
+          </div>
+          <div class="col-lg-4 cidicard" style="display:block; margin:auto">
+
+            <img src="images/cidifoto.jpg"  width="129" height="129" alt="" class="img-circle"> <br>
+            <div type="button" class="btn btn-warning" name="button"><a href="https://cidi.cba.gov.ar/portal-publico/?app=25" target="_blank" > Iniciá sesión</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <section style="background-image: url(images/seccprov5.png);" class="section-30 section-sm-40 section-md-66 section-lg-bottom-90 bg-gray-dark page-title-wrap ">
+    <div class="shell">
+      <div class="page-title">
+        <h3>#QUIERO <span class="text-thin">SER PROVEEDOR</span></h3>
+      </div>
+    </div>
+  </section>
+
+
+  <main class="page-content">
+
+
+
+
+
+    <section class="section-60 section-sm-90 section-lg-bottom-120 bg-primary">
+      <style type="text/css">
+          #register_form fieldset:not(:first-of-type) {
+          display: none;
+          }
+      </style>
+
+      <script type="text/javascript">
+            $(document).ready(function(){
+            var form_count = 1, previous_form, next_form, total_forms;
+            total_forms = $("fieldset").length;
+            $(".next-form").click(function(){
+            previous_form = $(this).parent();
+            next_form = $(this).parent().next();
+            next_form.show();
+            previous_form.hide();
+            setProgressBarValue(++form_count);
+            });
+            $(".previous-form").click(function(){
+            previous_form = $(this).parent();
+            next_form = $(this).parent().prev();
+            next_form.show();
+            previous_form.hide();
+            setProgressBarValue(--form_count);
+            });
+            setProgressBarValue(form_count);
+            function setProgressBarValue(value){
+            var percent = parseFloat(100 / total_forms) * value;
+            percent = percent.toFixed();
+            $(".progress-bar")
+            .css("width",percent+"%")
+            .html(percent+"%");
+            }
+            // Handle form submit and validation
+            $( "#register_form" ).submit(function(event) {
+            var error_message = '';
+            if(!$("#email").val()) {
+            error_message+="Please Fill Email Address";
+            }
+            if(!$("#password").val()) {
+            error_message+="<br>Please Fill Password";
+            }
+            if(!$("#mobile").val()) {
+            error_message+="<br>Please Fill Mobile Number";
+            }
+            // Display error if any else submit form
+            if(error_message) {
+            $('.alert-success').removeClass('hide').html(error_message);
+            return false;
+            } else {
+            return true;
+            }
+            });
+            });
+    </script>
+
+      <div class="container">
+      <h3>¿Cómo accedo a compras públicas?</h3>
+      <p>El Acceso a ComprasPúblicas te permitirá participar en las cotizaciones electrónicas. Esta gestión no tiene vencimiento.</p><br>
+
+      <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <div class="alert alert-success hide"></div>
+
+      <form id="register_form" novalidate action="form_action.php" method="post">
+
+
+        <fieldset>
+        <div class="form-group">
+        <ul>
+          <li><h4>Es necesario que el interesado, o Representante Legal de la firma, cuente con CiDi Nivel 2</h4></li>
+        </ul>
+        </div>
+        <input type="button" class="next-form btn btn-success " value="Comenzar" />
+        </fieldset>
+
+
+        <fieldset>
+          <div class="col-lg-4">
+            <h4> Ingresá a <a href="https://cidi.cba.gov.ar/portal-publico/ " target="_blank"> cidi.gov.ar</a> y colocá tu usuario</h4>
+
+          </div>
+        <div class="form-group col-lg-8">
+            <img src="images/accesoacp/1.png" alt="">
+        </div>
+        <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+        <input type="button" name="next" class="next-form btn btn-success" value="Siguiente" />
+        </fieldset>
+
+
+      <fieldset>
+        <div class="col-lg-4">
+          <h4> Buscá el servicio ComprasPúblicas</h4>
+
+        </div>
+      <div class="form-group col-lg-8">
+        <img src="images/accesoacp/2.png" alt="">
+      </div>
+      <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+      <input type="button" name="next" class="next-form btn btn-success" value="Siguiente" />
+      </fieldset>
+
+
+      <fieldset>
+        <div class="col-lg-4">
+          <h4> Hacé clic en "Solicitar acceso a ComprasPúblicas"</h4>
+
+        </div>
+      <div class="form-group col-lg-8">
+        <img src="images/accesoacp/3.png" alt="">
+      </div>
+      <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+      <input type="button" name="next" class="next-form btn btn-success" value="Siguiente" />
+      </fieldset>
+
+
+      <fieldset>
+        <div class="col-lg-4">
+          <h4> Completá con tus datos</h4>
+
+        </div>
+      <div class="form-group col-lg-8">
+        <img src="images/accesoacp/4.png" alt="">
+      </div>
+      <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+      <input type="button" name="next" class="next-form btn btn-success" value="Siguiente" />
+      </fieldset>
+
+
+      <fieldset>
+        <div class="col-lg-4">
+          <h4> Rellená los campos solicitados, hacé clic en "Aceptar" y ¡Listo!</h4>
+
+        </div>
+      <div class="form-group col-lg-8">
+        <img src="images/accesoacp/5.png" alt="">
+      </div>
+      <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+     </fieldset>
+
+      </form>
+      </div>
+
+
+
+
+    </section>
+
+    <section>
+
+    </section>
+
+    <section class="section-60 section-sm-90 section-lg-bottom-120 bgdgreewhite">
+      <div class="container">
+        <div class="row r">
+
+          <div  class="col-xs-12 col-sm-12 col-md-12 col-xl-12 isotope-item ">
+            <div class=" post-boxed-caption  ">
+
+              <h3 class="text-blod text-center">INSCRIPCIÓN <span class="text-thin"> ROPYCE</span></h3>
+
+              <h6>Es obligatorio para: <br> <br> - Ser adjudicado en Licitaciones de bienes y servicios,<br> -  Ofertar y/o ser adjudicado en algunas contrataciones de obra pública. <br><br>Tiene un plazo de vigencia que debe ser renovado para que tenga validez. <br>  <br>Incluye el Acceso a ComprasPúblicas, por lo que si está vencida tu inscripción,  podrás seguir participando en contrataciones electrónicas que no exijan de la Inscripción en ROPyCE. <br> <br> Las ventajas de contar con la Inscripción es que al momento de ofertar, se facilita la instancia de presentación de documentación legal. De este modo, no será necesario que presentes dos veces la misma documentación en otros organismos públicos provinciales. <br> <br> Si aún no tenes el Acceso a ComprasPúblicas, completá el formulario en el Portal de ComprasPúblicas en CiDi. <br> <br> <b> Consultá la documentación que debes presentar.</b></h6>
+
+
+            </div>
+          </div>
+</div>
+      </div>
+
+    </section>
+    <section class=" section-60 section-sm-90 section-lg-bottom-120 bg-primary" id="areaImprimir">
+      <h3 class="text-blod text-center">Documentación <span class="text-thin"> a presentar</span></h3>
+      <div class="shell">
+        <div class="range range-sm-center">
+
+          <div class="cell-sm-12 cell-md-12 cell-lg-12 offset-top-40">
+            <div id="tabs-4" class="tabs-custom tabs-horizontal tabs-minimal ">
+              <ul class="nav nav-tabs text-center ">
+                <li ><a href="#tabs-4-1" data-toggle="tab"><h6>  Persona Jurídica</h6></a></li>
+                <li><a href="#tabs-4-2" data-toggle="tab"><h6>Persona Humana</h6></a></li>
+                <li><a href="#tabs-4-3" data-toggle="tab"><h6>Proveedor extranjero</h6></a></li>
+              </ul>
+              <div class="tab-content text-secondary">
+                <div id="tabs-4-1" class="tab-pane fade in active">
+                  <h6>  Persona Jurídica</h6>
+                  <p class="text-white">
+                    <ul class="text-white">
+                      <li>1. Formulario “A”- Informe Sociedades emitido por la Dirección General de Inspección de Personas
+  Jurídicas de la Provincia de Córdoba, el que será gestionado por el mismo ROPyCE.</li>
+                    <li><ul>En caso de no contar con el mismo, o se trate de personas jurídicas inscriptas en otra jurisdicción:
+                      <li>  Estatuto Social, Contrato o Acta Constitutiva y todas sus modificaciones debidamente
+                      inscriptas en el Registro Público de Comercio correspondiente al lugar de origen de la
+                      sociedad.</li>
+                      <li>Acta de Asamblea o de Directorio de designación de autoridades donde conste la última
+                      distribución y aceptación de los cargos y, solo en el caso sociedades incluidas en el artículo
+                      299 de la Ley N° 19.550, Acta de Asamblea donde conste la aprobación del último ejercicio
+                      económico.</li>
+                      <li>Dichas actas y/o el último ejercicio económico aprobado (de corresponder), deberán
+                      encontrarse inscriptos o presentados en el Registro Público de Comercio correspondiente al
+                      lugar de origen de la sociedad.</li>
+                      <li>Informe de medidas cautelares de la Persona Jurídica, expedido por el Registro Público de
+                      Comercio de la jurisdicción donde se encuentre inscripta la sociedad, con una antigüedad no
+                      mayor a ciento ochenta (180) días corridos.</li>
+                    </ul></li>
+                    <li></li>
+                  </ul>
+ </p>
+ <p class="text-white">2.Balance General del último ejercicio económico, emitido por Contador Público independiente y
+ certificado por el Consejo Profesional de Ciencias Económicas de la provincia que corresponda.</p>
+<p class="text-white"> En caso de contratos asociativos, se deberá cumplir con la documentación establecida en el punto
+“A”, en todo aquello que le sea aplicable. Asimismo, cada uno de los miembros del mismo deberá
+contar previamente con Inscripción en ROPyCE vigente</p>
+                </div>
+                <div id="tabs-4-2" class="tab-pane fade">
+                  <h6>Persona Humana</h6>
+                  <p class="text-white">1. Formulario “C” Informe Matrícula Individual, emitido por Dirección General de Inspección de
+Personas Jurídicas de la Provincia de Córdoba, el que será gestionado por el mismo ROPyCE. En
+caso de no contar con el mismo, deberá contar con Informe de medidas cautelares de la persona
+humana, expedido por el Registro Público de Comercio de su domicilio, con una antigüedad no
+mayor a ciento ochenta (180) días corridos.</p>
+                  <p class="text-white"> 2. Estado de Situación Patrimonial, Manifestación de Bienes (sólo cuando no requiera cálculo de
+Capacidad Económico Financiera en los términos del Decreto N° 1.419/17), o bien Balance
+General del último ejercicio económico; emitido por Contador Público independiente y certificado
+por el Consejo Profesional de Ciencias Económicas de la provincia que corresponda.</p>
+
+                </div>
+                <div id="tabs-4-3" class="tab-pane fade">
+                  <h6>Proveedor extranjero</h6>
+                  <p class="text-white">1. Estatuto Social, Contrato, Acta Constitutiva, Actas de designación de autoridades y/o de
+distribución de cargos, Actas de aprobación de Balance o documentos símiles oficiales emitidos
+en el país de origen, para el caso de tratarse de personas jurídicas; de corresponder.</p>
+                  <p class="text-white">2. Balance General del último ejercicio económico, estado de situación patrimonial o documento
+símil; de corresponder. En caso de ser una empresa miembro de un grupo económico, el balance
+debe ser propio (no consolidado). </p>
+                  <p class="text-white">3. Constancia que acredite su condición tributaria actualizada, expedida por el organismo fiscal de
+su país de origen o documentación símil; debiendo constar en la misma las actividades por las
+cuales tributa; o bien, Declaración Jurada informando actividades que realiza y que desea prestar
+en la Provincia.
+</p>
+  <p class="text-white"> La documentación expedida en el extranjero, deberá reunir todas las formalidades exigidas por la
+legislación del país de origen y las normas internacionales a los efectos de su fidelidad, y encontrarse
+traducida al español por traductor matriculado, en caso de corresponder</p>
+<p class="text-white"> Nota: Se entenderá como “Proveedor extranjero” a todo aquel cuya matriz radique fuera del territorio
+de la Nación. Las sucursales de firmas extranjeras constituidas dentro de la jurisdicción nacional en los
+términos del artículo 118° de la Ley General de Sociedades N° 19.550, deberán cumplimentar los
+requerimientos del apartado 1.I.A del presente, o equivalentes, en caso de corresponder </p>
+
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section >
+      <div class="range range-xs-center offset-top-60 " >
+        <div class="cell-sm-10 cell-md-10 cell-lg-12" >
+          <div class="  submenu-item bg-white-outline-btn text-center" style="padding:50px">
+            <h3 class="text-white">Solicitá <span class="text-thin"> el Acceso o Inscripción a ROPyCE</span></h3>
+            <form class="rd-mailform group group-bottom offset-top-15 offset-sm-top-35">
+              <div class="group-item form-group">
+                <input id="index-request-name" type="text" name="name" data-constraints="@Required" class="form-control">
+                <label for="index-request-name" class="form-label">Nombre o Razón Social</label>
+              </div>
+              <div class="group-item form-group">
+                <input id="index-request-name" type="text" name="name" data-constraints="@Required" class="form-control">
+                <label for="index-request-name" class="form-label">CUIT</label>
+              </div>
+              <div class="group-item form-group">
+                <input id="index-request-phone" type="text" name="phone" data-constraints="@Numeric @Required" class="form-control">
+                <label for="index-request-phone" class="form-label">E-mail</label>
+              </div>
+              <div class="group-item form-group">
+                <select data-minimum-results-for-search="Infinity" data-constraints="@Required" class="form-control select-filter">
+                  <option value="1">Solicitar Acceso a ComprasPúblicas</option>
+                  <option value="2">Solicitar Inscripción en ROPYCE</option>
+                </select>
+              </div>
+              <div class="group-item group-item-sm">
+                <button type="submit" class="btn btn-block btn-white-outline">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <footer class="page-foot bg-cape-cod context-dark">
+    <section class="section-40 section-sm-75">
+      <div class="shell">
+        <div class="range range-xs-center">
+          <div class="cell-xs-9 cell-sm-11 cell-lg-12">
+
+            <div class="range">
+              <div class="cell-sm-6 cell-md-10 cell-lg-3">
+                <div style="max-width: 510px;" class="inset-lg-right-20"><a href="index.html" class="brand brand-inverse"><img src="images/safb.png" alt="logo" width="160"/></a>
+               </div>
+               <address class="contact-info offset-top-22 offset-md-top-30 offset-lg-top-35 text-left">
+                 <div class="unit unit-horizontal unit-spacing-md unit-middle offset-top-15">
+                   <div class="unit-left"><span class="icon icon-xs icon-dusty-gray fa fa-envelope-o"></span></div>
+                   <div class="unit-body"><a  class="link-white"><span > ropyce.compraspublicas@cba.gov.ar</span></a></div>
+                 </div>
+               <div class="unit unit-horizontal unit-spacing-md unit-middle offset-top-15">
+                 <div class="unit-left"><span class="icon icon-xs icon-dusty-gray fa fa-envelope-o"></span></div>
+                 <div class="unit-body"><a  class="link-white"><span > suaf.compraspublicas@cba.gov.ar</span></a></div>
+               </div>
+               <div class="unit unit-horizontal unit-spacing-md offset-top-15">
+                 <div class="unit-left"><span class="icon icon-xs icon-dusty-gray material-icons-place"></span></div>
+                 <div class="unit-body"><a class="link-white reveal-inline">Concepción Arenal 54, Córdoba</a></div>
+               </div>
+               </address>
+              </div>
+
+              <div class="cell-sm-6 cell-md-4 cell-lg-3 offset-top-50 offset-sm-top-0 offset-md-top-50 offset-lg-top-0">
+                <div style="max-width: 510px;" class="inset-lg-right-20"><a href="index.html" class="brand brand-inverse"><img src="images/finanzasb.png" alt="logo" width="160"/></a>
+                </div>
+
+              </div>
+              <div class="cell-sm-6 cell-md-4 cell-lg-3 offset-top-50 offset-lg-top-0">
+                <h6 class="text-small-16 text-uppercase">Accesos directos</h6>
+                <div style="max-width: 270px;" class="row offset-top-22 offset-md-top-30">
+                  <div class="col-xs-6">
+                    <ul class="list-marked-variant-2">
+                      <li><a href="index.html">Inicio</a></li>
+                      <li><a href="institucional.html">Institucional</a></li>
+                      <li><a href="novedades.html">Novedades</a></li>
+                      <li><a href="normativa.html">Normativa</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-6">
+                    <ul class="list-marked-variant-2">
+                      <li><a href="proveedoresycontratistas.html">ROPYCE</a></li>
+                      <li><a href="cotizaciones.html">Cotizaciones</a></li>
+                      <li><a href="organismoscontratantes.html">Organismos Contratantes</a></li>
+                      <li><a href="benficiariosdepago.html">Beneficiarios de Pago</a></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="cell-sm-6 cell-md-4 cell-lg-3 offset-top-50 offset-lg-top-0">
+                <div style="max-width: 510px;" class="inset-lg-right-20"><a href="index.html" class="brand brand-inverse"><img src="images/gobb.png" alt="logo" width="400"/></a>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="shell">
+      <hr class="hr bg-abbey-04">
+      © 2020 Dirección General de Compras y Contrataciones - Ministerio de Finanzas - Gobierno de la Provincia de Córdoba
+    </div>
+    <section class="section-35">
+      <div class="shell text-center">
+        <div class="range range-sm-reverse range-sm-justify range-sm-middle">
+          <div class="cell-sm-6 text-sm-right">
+            <div class="group-sm group-middle">
+              <p class="text-italic text-white">Nuestras Redes</p>
+              <ul class="list-inline list-inline-reset">
+                <li><a href="https://www.facebook.com/ropycecba" target="_blank" class="icon icon-round icon-abbey-filled icon-xxs-smallest fa fa-facebook"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCiPAxG4_18oZzeJRPIOQkIg" target="_blank" class="icon icon-round icon-abbey-filled icon-xxs-smallest fa fa-youtube"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cell-sm-6 offset-top-15 offset-sm-top-0 text-sm-left">
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+</div>
+
+
+
+
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
