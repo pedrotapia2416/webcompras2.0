@@ -33056,7 +33056,7 @@ blockquote cite {
 }
 
 .text-blue{
-  color:#024c9a;
+  color:#3082c1;
 }
 
 .icon-box .box-icon {
@@ -33640,16 +33640,16 @@ background: linear-gradient(to right, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 10
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c398f', endColorstr='#004d9a', GradientType=1 );
 }
 .bg-lila {
-  background: linear-gradient(110deg, #822b87 60%, #822b87 60%);
+  background: linear-gradient(110deg, #00a5d9  60%, #00a5d9  60%);
 }
 .bg-amarillo {
-  background: linear-gradient(110deg, #fad500 60%, #fad500 60%);
+  background: linear-gradient(110deg, #eca939  60%, #eca939  60%);
 }
 .bg-verde {
-  background: linear-gradient(110deg, #00a538 60%, #00a538 60%);
+  background: linear-gradient(110deg, #eca939  60%, #eca939  60%);
 }
 .bg-azul {
-  background: linear-gradient(110deg, #004d9a 60%, #004d9a 60%);
+  background: linear-gradient(110deg, #00a5d9  60%, #00a5d9  60%);
 }
 
 .post-block a,
@@ -33837,7 +33837,7 @@ box-shadow: -1px 6px 90px -12px rgba(0,0,0,1);
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 12px 22px 16px;
-    background: linear-gradient(110deg, #79398f 60%, #582063 60%);
+    background: linear-gradient(110deg, #00a5d9 60%, #0091bd 60%);
   color:white;
 }
 
@@ -45653,7 +45653,7 @@ html.rd-navbar-sidebar-linked body {
   background: -webkit-linear-gradient(left, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
   background: -o-linear-gradient(left, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
   background: -ms-linear-gradient(left, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
-  background: linear-gradient(to right, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
+  background: linear-gradient(to right, rgb(82 168 222) 0%, rgb(1 78 155) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c398f', endColorstr='#004d9a', GradientType=1 );
 }
 
@@ -51320,7 +51320,7 @@ margin-top:-450px;display:block;}
 .swiper-slide-caption .jumbotron-custom {color:#fff}
 .swiper-slide-caption  .veil{color:#333333}
 .swiper-slide{text-align:left;}
-.swiper-slide .btn.btn-primary{background:#7c398f;border-color:#dee2e6}
+.swiper-slide .btn.btn-primary{background:#51a6dd;border-color:#dee2e6}
 @media (max-width:992px)
 {
 	.rd-navbar-brand img{width:140px;}
