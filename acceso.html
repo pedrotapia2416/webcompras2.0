@@ -48,7 +48,7 @@ $('#selectCategory').change(function(){
 
 <script type="text/javascript">
       $(document).ready(function(){
-      var form_count = 1, previous_form, next_form, total_forms;
+      var form_count = 0, previous_form, next_form, total_forms;
       total_forms = $("fieldset").length;
       $(".next-form").click(function(){
       previous_form = $(this).parent();
@@ -66,32 +66,14 @@ $('#selectCategory').change(function(){
       });
       setProgressBarValue(form_count);
       function setProgressBarValue(value){
-      var percent = parseFloat(100 / total_forms) * value;
+      var percent = parseFloat(100 / (total_forms -1) ) * value;
       percent = percent.toFixed();
       $(".progress-bar")
       .css("width",percent+"%")
-      .html(percent+"%");
+      .html();
       }
       // Handle form submit and validation
-      $( "#register_form" ).submit(function(event) {
-      var error_message = '';
-      if(!$("#email").val()) {
-      error_message+="Please Fill Email Address";
-      }
-      if(!$("#password").val()) {
-      error_message+="<br>Please Fill Password";
-      }
-      if(!$("#mobile").val()) {
-      error_message+="<br>Please Fill Mobile Number";
-      }
-      // Display error if any else submit form
-      if(error_message) {
-      $('.alert-success').removeClass('hide').html(error_message);
-      return false;
-      } else {
-      return true;
-      }
-      });
+
       });
 </script>
 
@@ -216,58 +198,150 @@ $('#selectCategory').change(function(){
 
   </header>
 
-  <section style="background-image: url(images/seccprov5.png);" class="section-30 section-sm-40 section-md-66 section-lg-bottom-90 bg-gray-dark page-title-wrap ">
-    <div class="shell">
-      <div class="page-title">
-        <h3>#QUIERO <span class="text-thin">SER PROVEEDOR</span></h3>
+
+
+
+  <main class="page-content">
+    <section style="background-image: url(images/seccprov5.png);" class="section-30 section-sm-40 section-md-66 section-lg-bottom-90 bg-gray-dark page-title-wrap ">
+      <div class="shell">
+        <div class="page-title">
+          <h3>#QUIERO <span class="text-thin">SER PROVEEDOR</span></h3>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section-60 section-sm-90 section-lg-bottom-120 bg1 ">
+      <div class="shell text-center ">
+        <h3>¿Cómo accedo a compras públicas?</h3>
+
+        <div class="range range-sm-center offset-top-40">
+          <div class="cell-lg-12">
+            <div >
+
+              <div >
+                <div >
+                  <div>
+
+                    <div class="panel-arrow"></div>
+                    </a> </div>
+                </div>
+                <div class="">
+
+                  <div class="text-justify ">
+
+                    <p> <h4> El Acceso a ComprasPúblicas te permitirá participar en las cotizaciones electrónicas. Esta gestión no tiene vencimiento.</p> </h4><br>
+                    <form id="register_form" >
+                      <div class="progress">
+                      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+
+                      <fieldset class="">
+                      <div class="form-group col-lg-8 ">
+                      <ul>
+                        <li>El titular o representante natural de la firma deberá ingresar a Compras Publicas desde su cuenta de <b>Ciudadano Digital (CiDi) Nivel 2 </b>  y completar la solicitud de Acceso a ComprasPúblicas.  <br><br></li>
 
 
-  <main class="page-content bg1">
+                        <li> Luego Avisarnos a ropyce.compraspublicas@gmail.com el CUIT y Razón Social.
+                           <br><br></li>
+                           <h4>Si tienes jurisdicción fuera de Córdoba</h4>
+                           <li> Recordá enviar adjunta el acta de asamblea o de directorio de designación de autoridades donde conste la última distribución y aceptación de los cargos inscripta en Registro Público de Comercio. <br> <br></li>
+                        <li>Y si lo hace un representante legal, tenés que enviar un poder de representación suficiente a su nombre.
+                         <br><br><b> La documentación enviada por correo electrónico debe ser escaneada a color de la original, o de una copia certificada y legalizada, y con firma digital. </b></li>
 
-    <section class="shell">
-      <div class="range range-condensed range-xs-center range-sm-left">
-        <div class="cell-xs-10 cell-sm-6 height-fill">
-          <article class="icon-box icon-box-top-line boxshadow">
-            <div class="box-top">
-              <div class="box-icon"><span class="i"><i class="fa fa-laptop con icon-primary icon-lg"></i></span></div>
-              <div class="box-header ">
-                <h5 class="text-blue"> <a href="acceso.html">ACCEDER A COMPRAS PÚBLICAS</a></h5>
+                      </ul>
+
+
+                      </div>
+                      <div class="col-lg-4">
+
+                      </div>
+                                              <input type="button" class="next-form btn btn-success " value="Comenzar" />
+
+                      </fieldset>
+
+
+                      <fieldset class="">
+                        <div class="col-lg-4  ">
+                          <h4> Ingresá a <a href="https://cidi.cba.gov.ar/portal-publico/ " target="_blank"> cidi.gov.ar</a> y colocá tu usuario</h4>
+
+                        </div>
+                      <div class="form-group col-lg-8 ">
+                          <img src="images/accesoacp/1.png" class="drop" alt="" width="80%">
+                      </div>
+                      <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+                      <input type="button" name="next" class="next-form btn btn-success" value="Siguiente" />
+                      </fieldset>
+
+
+                    <fieldset>
+                      <div class="col-lg-4">
+                        <h4> Buscá el servicio ComprasPúblicas</h4>
+
+                      </div>
+                    <div class="form-group col-lg-8">
+                      <img src="images/accesoacp/2.png" class="drop" alt="" width="80%">
+                    </div>
+                    <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+                    <input type="button" name="next" class="next-form btn btn-success" value="Siguiente" />
+                    </fieldset>
+
+
+                    <fieldset>
+                      <div class="col-lg-4">
+                        <h4> Hacé clic en "Solicitar acceso a ComprasPúblicas"</h4>
+
+                      </div>
+                    <div class="form-group col-lg-8">
+                      <img src="images/accesoacp/3.png" class="drop" alt="" width="80%">
+                    </div>
+                    <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+                    <input type="button" name="next" class="next-form btn btn-success" value="Siguiente" />
+                    </fieldset>
+
+
+                    <fieldset>
+                      <div class="col-lg-4">
+                        <h4> Completá con tus datos</h4>
+
+                      </div>
+                    <div class="form-group col-lg-8">
+                      <img src="images/accesoacp/4.png" class="drop" alt="" width="80%">
+                    </div>
+                    <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+                    <input type="button" name="next" class="next-form btn btn-success" value="Siguiente" />
+                    </fieldset>
+
+
+                    <fieldset>
+                      <div class="col-lg-4">
+                        <h4> Rellená los campos solicitados, hacé clic en "Aceptar" y ¡Listo!</h4>
+
+                        <p>Recodrá enviarnos un mail a ropyce.compraspublicas@gmail.com</p>
+
+                      </div>
+                    <div class="form-group col-lg-8">
+                      <img src="images/accesoacp/5.png" class="drop" alt="" width="80%">
+                    </div>
+                    <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+                    </fieldset>
+
+                    </form>
+
+
+
+                  </div>
+                </div>
               </div>
+
+
+
             </div>
-            <div class="box-body">
-              <p class="text-gray-base">El Acceso a ComprasPúblicas te permitirá participar en las cotizaciones electrónicas. <br> Esta gestión no tiene vencimiento..</p> <br>
-              <p>En esta sección encontrarás toda la información para gestionar el acceso a ComprasPúblicas</p>
-            </div>
-            <a href="#" class="btn btn-icon-only btn-icon-single btn-icon-default"><span class="icon icon-sm material-icons-arrow_forward"></span></a> </article>
+          </div>
         </div>
-        <div class="cell-xs-10 cell-sm-6 height-fill offset-top-40 offset-sm-top-0">
-          <article class="icon-box icon-box-top-line">
-            <div class="box-top">
-              <div class="box-icon"><span class=""><i class="fa fa-file con icon-primary icon-lg"></i></span></div>
-              <div class="box-header text-uppercase">
-                <h5 class="text-blue"><a href="inscripcion.html">Inscripción en ropyce</a></h5>
-              </div>
-            </div>
-            <div class="box-body">
-              <p class="text-gray-base">Es obligatorio para: <br>
-
-- Ser adjudicado en Licitaciones de bienes y servicios, <br>
-- Ofertar y/o ser adjudicado en algunas contrataciones de obra pública. <br>
-
-Tiene un plazo de vigencia que debe ser renovado para que tenga validez.</p>
-            </div>
-            <a href="#" class="btn btn-icon-only btn-icon-single btn-icon-default"><span class="icon icon-sm material-icons-arrow_forward"></span></a> </article>
-        </div>
-
-
 
 
       </div>
     </section>
-
 
 
 
