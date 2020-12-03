@@ -261,7 +261,7 @@ background-color: #0967e4 !important;
 }
 .bg1{
 
-  background-image: url(/images/bg1.png);
+  background-image: url(../images/bg1.png);
   background-size: cover;
   background-attachment: fixed;
 
@@ -269,14 +269,14 @@ background-color: #0967e4 !important;
 
 .bgsubmenu {
 
-  background-image: url(/images/seccprov5.png);
+  background-image: url(../images/seccprov5.png);
   background-size: cover;
   background-attachment: fixed;
 
 }
 .bginstructivo {
 
-  background-image: url(/images/bginstructivo.png);
+  background-image: url(../images/bginstructivo.png);
   background-size: cover;
   background-attachment: fixed;
 
